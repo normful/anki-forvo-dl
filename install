@@ -1,0 +1,13 @@
+#!/usr/bin/sh
+
+INSTALL_DIR=`xdg-user-dir DOCUMENTS`/Anki/addons
+
+#copy plugin files
+cp forvo-dl.py $INSTALL_DIR
+cp -r forvo $INSTALL_DIR
+ 
+#link to requests library
+cd $INSTALL_DIR/forvo
+REQUESTS_DIR=`pip show requests | grep Location | sed 's/^.* \(.*$\)/\1/'`
+ln -s $REQUESTS_DIR/requests
+

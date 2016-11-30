@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+
+INSTALL_DIR=`xdg-user-dir DOCUMENTS`/Anki/addons
+rm -rf $INSTALL_DIR/forvo-dl.py* $INSTALL_DIR/forvo
+
