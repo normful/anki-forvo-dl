@@ -8,7 +8,7 @@ Anki plugin for downloading audio from Forvo
 Needs Python and the requests library installed.
 
 ```
-pip install requests
+$ pip install requests
 ```
 
 A Forvo API key must be located at ~/.forvo.
@@ -16,7 +16,7 @@ A Forvo API key must be located at ~/.forvo.
 ### Installing
 Run the install script and restart Anki.
 ```
-./install
+$ ./install
 ```
 
 ## Todo
