@@ -23,6 +23,7 @@ Run the install script and restart Anki.
 
 * Add Forvo key as part of the install script
 * Allow Anki directory to be specified in the install script
+* Add install script for Windows
 
 ## Acknowledgments
 
