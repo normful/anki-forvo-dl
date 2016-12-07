@@ -1,5 +1,12 @@
 #!/usr/bin/sh
 
+#check for key arguement
+if [ -z $1 ]; then
+	echo "Usage $0 <API Key>"
+	exit -1
+fi
+
+API_KEY=$1
 INSTALL_DIR=`xdg-user-dir DOCUMENTS`/Anki/addons
 
 #copy plugin files
@@ -9,5 +16,7 @@ cp -r forvo $INSTALL_DIR
 #link to requests library
 cd $INSTALL_DIR/forvo
 REQUESTS_DIR=`pip show requests | grep Location | sed 's/^.* \(.*$\)/\1/'`
-ln -s $REQUESTS_DIR/requests
+ln -sf $REQUESTS_DIR/requests
+
+echo $API_KEY > ~/.forvo
 

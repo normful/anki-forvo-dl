@@ -11,8 +11,6 @@ Needs Python and the requests library installed.
 $ pip install requests
 ```
 
-A Forvo API key must be located at ~/.forvo.
-
 ### Installing
 Run the install script and restart Anki.
 ```
@@ -21,7 +19,6 @@ $ ./install
 
 ## Todo
 
-* Add Forvo key as part of the install script
 * Allow Anki directory to be specified in the install script
 * Add install script for Windows
 
