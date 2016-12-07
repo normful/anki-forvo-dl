@@ -2,12 +2,17 @@
 
 #check for key arguement
 if [ -z $1 ]; then
-	echo "Usage $0 <API Key>"
+	echo "Usage $0 api_key [anki_path]" 
 	exit -1
 fi
 
 API_KEY=$1
-INSTALL_DIR=`xdg-user-dir DOCUMENTS`/Anki/addons
+
+if [ -z $2 ]; then
+	INSTALL_DIR=`xdg-user-dir DOCUMENTS`/Anki/addons
+else
+	INSTALL_DIR=$2/addons
+fi
 
 #copy plugin files
 cp forvo-dl.py $INSTALL_DIR

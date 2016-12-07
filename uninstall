@@ -1,5 +1,11 @@
 #!/usr/bin/sh
 
-INSTALL_DIR=`xdg-user-dir DOCUMENTS`/Anki/addons
+#check if anki_path is given, otherwise use default location
+if [ -z $1 ]; then
+	INSTALL_DIR=`xdg-user-dir DOCUMENTS`/Anki/addons
+else
+	INSTALL_DIR=$1/Anki/addons
+fi
+
 rm -rf $INSTALL_DIR/forvo-dl.py* $INSTALL_DIR/forvo
 
