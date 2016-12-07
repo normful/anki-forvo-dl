@@ -14,7 +14,7 @@ $ pip install requests
 ### Installing
 Run the install script and restart Anki.
 ```
-$ ./install
+$ ./install api_key
 ```
 
 ## Todo
