@@ -19,7 +19,6 @@ $ ./install api_key [anki_path]
 
 ## Todo
 
-* Allow Anki directory to be specified in the install script
 * Add install script for Windows
 
 ## Acknowledgments
