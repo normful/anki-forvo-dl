@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/bash
 
 #check if anki_path is given, otherwise use default location
 if [ -z $1 ]; then
